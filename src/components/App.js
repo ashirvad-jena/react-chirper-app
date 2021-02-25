@@ -12,7 +12,7 @@ class App extends Component {
 		return (
 			<div>
 				Starter Code
-				{this.props.loading == true ? null : <Dashboard />}
+				{this.props.isLoading ? null : <Dashboard />}
 			</div>
 		);
 	}
@@ -20,7 +20,7 @@ class App extends Component {
 
 const mapStateToProps = ({ authedUser }) => {
 	return {
-		loading: authedUser === null,
+		isLoading: authedUser === null,
 	};
 };
 

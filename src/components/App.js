@@ -9,12 +9,7 @@ class App extends Component {
 	}
 
 	render() {
-		return (
-			<div>
-				Starter Code
-				{this.props.isLoading ? null : <Dashboard />}
-			</div>
-		);
+		return <div>{this.props.isLoading ? null : <Dashboard />}</div>;
 	}
 }
 
